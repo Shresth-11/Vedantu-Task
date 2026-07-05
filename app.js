@@ -594,7 +594,7 @@ function renderStudentScreen1(container) {
     container.innerHTML = `
         <div class="proto-screen">
             <div class="proto-brand-header" style="display: flex; align-items: center; gap: 6px; margin-bottom: 1.25rem;">
-                <img src="https://www.vedantu.com/static/images/vedantu-logo.svg" alt="Vedantu" style="height: 18px; width: auto; display: block;">
+                <span style="font-weight:800;font-size:0.85rem;letter-spacing:-0.3px;color:var(--brand-primary);font-family:'Outfit',sans-serif;">Vedantu</span>
                 <span style="font-weight: 700; font-size: 0.8rem; color: var(--text-secondary); margin-left: 2px; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1px;">Onboarding</span>
             </div>
             
@@ -651,7 +651,7 @@ function renderStudentScreen2ParentGate(container) {
     container.innerHTML = `
         <div class="proto-screen">
             <div class="proto-brand-header" style="display: flex; align-items: center; gap: 6px; margin-bottom: 1.25rem;">
-                <img src="https://www.vedantu.com/static/images/vedantu-logo.svg" alt="Vedantu" style="height: 18px; width: auto; display: block;">
+                <span style="font-weight:800;font-size:0.85rem;letter-spacing:-0.3px;color:var(--brand-primary);font-family:'Outfit',sans-serif;">Vedantu</span>
                 <span style="font-weight: 700; font-size: 0.8rem; color: var(--text-secondary); margin-left: 2px; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1px;">Consent Gate</span>
             </div>
             
@@ -702,7 +702,7 @@ function renderStudentScreen3ConsentNotice(container) {
     container.innerHTML = `
         <div class="proto-screen">
             <div class="proto-brand-header" style="display: flex; align-items: center; gap: 6px; margin-bottom: 1.25rem;">
-                <img src="https://www.vedantu.com/static/images/vedantu-logo.svg" alt="Vedantu" style="height: 18px; width: auto; display: block;">
+                <span style="font-weight:800;font-size:0.85rem;letter-spacing:-0.3px;color:var(--brand-primary);font-family:'Outfit',sans-serif;">Vedantu</span>
                 <span style="font-weight: 700; font-size: 0.8rem; color: var(--text-secondary); margin-left: 2px; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1px;">Consent Notice</span>
             </div>
             
@@ -730,7 +730,7 @@ function renderStudentScreen3ConsentNotice(container) {
                         <h4 style="margin:0; font-weight:700;">${text.item2_title}</h4>
                         <p style="margin:0; font-size:0.7rem; line-height:1.3;">${text.item2_desc}</p>
                         <div style="margin-top: 0.2rem; display: flex; align-items: center; gap: 6px;">
-                            <input type="checkbox" id="personalization-opt-in" checked style="cursor:pointer;">
+                            <input type="checkbox" id="personalization-opt-in" style="cursor:pointer;">
                             <label for="personalization-opt-in" style="font-size: 0.65rem; color: var(--text-primary); cursor: pointer; font-weight:600;">Enable personalization</label>
                         </div>
                     </div>
@@ -777,7 +777,7 @@ function renderStudentScreen4VpcChoice(container) {
     container.innerHTML = `
         <div class="proto-screen">
             <div class="proto-brand-header" style="display: flex; align-items: center; gap: 6px; margin-bottom: 1.25rem;">
-                <img src="https://www.vedantu.com/static/images/vedantu-logo.svg" alt="Vedantu" style="height: 18px; width: auto; display: block;">
+                <span style="font-weight:800;font-size:0.85rem;letter-spacing:-0.3px;color:var(--brand-primary);font-family:'Outfit',sans-serif;">Vedantu</span>
                 <span style="font-weight: 700; font-size: 0.8rem; color: var(--text-secondary); margin-left: 2px; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1px;">Identity Verification</span>
             </div>
             
@@ -849,7 +849,7 @@ function renderStudentScreen5UpiFlow(container) {
     container.innerHTML = `
         <div class="proto-screen">
             <div class="proto-brand-header" style="display: flex; align-items: center; gap: 6px; margin-bottom: 1.25rem;">
-                <img src="https://www.vedantu.com/static/images/vedantu-logo.svg" alt="Vedantu" style="height: 18px; width: auto; display: block;">
+                <span style="font-weight:800;font-size:0.85rem;letter-spacing:-0.3px;color:var(--brand-primary);font-family:'Outfit',sans-serif;">Vedantu</span>
                 <span style="font-weight: 700; font-size: 0.8rem; color: var(--text-secondary); margin-left: 2px; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1px;">UPI Penny-Drop</span>
             </div>
             
@@ -929,7 +929,7 @@ function renderStudentScreen5AadhaarFlow(container) {
     container.innerHTML = `
         <div class="proto-screen">
             <div class="proto-brand-header" style="display: flex; align-items: center; gap: 6px; margin-bottom: 1.25rem;">
-                <img src="https://www.vedantu.com/static/images/vedantu-logo.svg" alt="Vedantu" style="height: 18px; width: auto; display: block;">
+                <span style="font-weight:800;font-size:0.85rem;letter-spacing:-0.3px;color:var(--brand-primary);font-family:'Outfit',sans-serif;">Vedantu</span>
                 <span style="font-weight: 700; font-size: 0.8rem; color: var(--text-secondary); margin-left: 2px; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1px;">Aadhaar OTP</span>
             </div>
             
@@ -1071,7 +1071,7 @@ function renderParentPortalHome(container) {
         container.innerHTML = `
             <div class="proto-screen">
                 <div class="proto-brand-header" style="display: flex; align-items: center; gap: 6px; margin-bottom: 1.25rem;">
-                    <img src="https://www.vedantu.com/static/images/vedantu-logo.svg" alt="Vedantu" style="height: 18px; width: auto; display: block;">
+                    <span style="font-weight:800;font-size:0.85rem;letter-spacing:-0.3px;color:var(--brand-primary);font-family:'Outfit',sans-serif;">Vedantu</span>
                     <span style="font-weight: 700; font-size: 0.8rem; color: var(--text-secondary); margin-left: 2px; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1px;">Privacy Portal</span>
                 </div>
                 <div style="text-align: center; margin-top: 2rem;">
@@ -1101,7 +1101,7 @@ function renderParentPortalHome(container) {
     container.innerHTML = `
         <div class="proto-screen">
             <div class="proto-brand-header" style="display: flex; align-items: center; gap: 6px; margin-bottom: 1.25rem;">
-                <img src="https://www.vedantu.com/static/images/vedantu-logo.svg" alt="Vedantu" style="height: 18px; width: auto; display: block;">
+                <span style="font-weight:800;font-size:0.85rem;letter-spacing:-0.3px;color:var(--brand-primary);font-family:'Outfit',sans-serif;">Vedantu</span>
                 <span style="font-weight: 700; font-size: 0.8rem; color: var(--text-secondary); margin-left: 2px; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1px;">Privacy Portal</span>
             </div>
             
