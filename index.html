@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedantu TrustGate — DPDP Compliance & Consent Experience</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- App Container -->
+    <div class="app-container">
+        <!-- Top Glass Header -->
+        <header class="app-header">
+            <div class="logo-section" style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.15rem;">
+                <img src="https://www.vedantu.com/static/images/vedantu-logo.svg" alt="Official Vedantu Logo" style="height: 28px; width: auto; display: block;">
+                <span class="subtitle" style="font-size: 0.65rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700; display: block; margin-top: 2px;">TrustGate • DPDP Portal</span>
+            </div>
+            <nav class="app-nav">
+                <button class="nav-btn active" data-tab="deck">
+                    <svg class="nav-icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                    Product Thinking Deck
+                </button>
+                <button class="nav-btn" data-tab="prototype">
+                    <svg class="nav-icon" viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+                    Interactive Prototype
+                </button>
+                <button class="nav-btn" data-tab="dashboard">
+                    <svg class="nav-icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-7-4H9v2h2v-2zm4-4h-2v6h2v-6zm4-2h-2v8h2V9z"/></svg>
+                    Compliance PM Dashboard
+                </button>
+            </nav>
+            <div class="header-badge">
+                <span class="badge-dot"></span>
+                <span>DPDP 2023 Compliant</span>
+            </div>
+        </header>
+
+        <!-- Main Workspace -->
+        <main class="app-main">
+
+            <!-- TAB 1: PRODUCT THINKING DECK -->
+            <section id="tab-deck" class="tab-content active">
+                <div class="deck-workspace">
+                    <!-- Slide Navigation Sidebar -->
+                    <div class="deck-sidebar">
+                        <h3>Slides</h3>
+                        <div class="slide-list" id="slide-selectors-container">
+                            <!-- Populated dynamically via app.js -->
+                        </div>
+                    </div>
+                    
+                    <!-- Slide Display Area -->
+                    <div class="slide-viewer">
+                        <div class="slide-stage" id="slide-stage">
+                            <!-- Populated dynamically via app.js -->
+                        </div>
+                        
+                        <!-- Slide Controls -->
+                        <div class="slide-controls">
+                            <button id="prev-slide" class="control-btn">
+                                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                            </button>
+                            <span class="slide-progress-text" id="slide-number-indicator">Slide 1 of 10</span>
+                            <div class="slide-progress-bar">
+                                <div class="slide-progress-fill" id="slide-progress-fill" style="width: 10%"></div>
+                            </div>
+                            <button id="next-slide" class="control-btn">
+                                <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: INTERACTIVE PROTOTYPE -->
+            <section id="tab-prototype" class="tab-content">
+                <div class="prototype-layout">
+                    <!-- Control panel on left -->
+                    <div class="proto-controls">
+                        <div class="panel-card">
+                            <h3>Prototype Controls</h3>
+                            <p class="panel-desc">Step into the shoes of different users or test specific legal requirements under DPDP.</p>
+                            
+                            <div class="flow-selector">
+                                <h4>Select Entry Flow</h4>
+                                <button class="flow-btn active" data-flow="student-flow">
+                                    <div class="btn-indicator"></div>
+                                    <div class="btn-text-content">
+                                        <strong>Under-18 Student Sign-up</strong>
+                                        <span>Triggers DPDP age gate & parent verification</span>
+                                    </div>
+                                </button>
+                                <button class="flow-btn" data-flow="parent-portal">
+                                    <div class="btn-indicator"></div>
+                                    <div class="btn-text-content">
+                                        <strong>Parent Privacy Dashboard</strong>
+                                        <span>Examine data rights: Access, edit, delete</span>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <div class="compliance-highlights">
+                                <h4>DPDP 2023 Safeguards Demonstrated</h4>
+                                <ul>
+                                    <li>
+                                        <strong>Section 9: Verifiable Parental Consent (VPC)</strong>
+                                        <p>UPI Penny-drop (₹1 refund) verifies financial & legal identity of the parent instantly without friction.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Section 6: Informed Consent & Notice</strong>
+                                        <p>Clear notice in regional languages (English & Hindi) containing why data is processed and grievance details.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Section 9(2): No Children Data Profiling</strong>
+                                        <p>Zero ad-tracking or learning behavioral tracking cookies by default. Strict data minimisation.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Section 11/12: Right to Correct & Erase</strong>
+                                        <p>Self-serve parent portal to request data deletion or revoke consent with immediate confirmation.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Simulated mobile device in center -->
+                    <div class="device-wrapper">
+                        <div class="smartphone-frame">
+                            <div class="phone-status-bar">
+                                <span class="phone-time">09:41</span>
+                                <div class="phone-notch"></div>
+                                <div class="phone-status-icons">
+                                    <svg viewBox="0 0 24 24" class="status-icon"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.13 19.58 10.53 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
+                                    <svg viewBox="0 0 24 24" class="status-icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                                    <svg viewBox="0 0 24 24" class="status-icon"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/></svg>
+                                </div>
+                            </div>
+                            
+                            <!-- Mobile Viewport Container -->
+                            <div class="mobile-viewport" id="mobile-viewport">
+                                <!-- Loaded dynamically via app.js -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sandbox Logs on right -->
+                    <div class="proto-sandbox">
+                        <div class="panel-card sandbox-card">
+                            <h3>Compliance Sandbox Terminal</h3>
+                            <p class="panel-desc">Real-time DPDP engine logs as you navigate the prototype.</p>
+                            <div class="terminal-logs" id="sandbox-logs">
+                                <div class="log-line system">[SYSTEM] Sandbox initialized. Select an onboarding flow.</div>
+                            </div>
+                            <div class="terminal-footer">
+                                <button class="clear-logs-btn" id="clear-logs">Clear Logs</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 3: PM ANALYTICS & COMPLIANCE DASHBOARD -->
+            <section id="tab-dashboard" class="tab-content">
+                <div class="dashboard-layout">
+                    <!-- Top stats cards -->
+                    <div class="dashboard-stats-grid">
+                        <div class="stat-card urgent">
+                            <div class="stat-header">
+                                <span>Consent Conversion Rate</span>
+                                <span class="trend negative">-15.4% (vs Last Week)</span>
+                            </div>
+                            <div class="stat-value">62.8%</div>
+                            <p class="stat-desc">North Star Metric (Goal: 78.0%)</p>
+                            <div class="progress-bar-small">
+                                <div class="progress-fill" style="width: 62.8%; background: var(--error-color);"></div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <span>Active Consent Agreements</span>
+                                <span class="trend positive">+4.2%</span>
+                            </div>
+                            <div class="stat-value">1.82M</div>
+                            <p class="stat-desc">Active minor accounts with valid parent consent</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <span>Verification Method Share</span>
+                                <span>UPI vs Aadhaar</span>
+                            </div>
+                            <div class="stat-value">72% / 28%</div>
+                            <p class="stat-desc">UPI Penny-drop remains the preferred low-friction flow</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <span>Avg. Verification Time</span>
+                                <span class="trend positive">-32s</span>
+                            </div>
+                            <div class="stat-value">1m 12s</div>
+                            <p class="stat-desc">Time from student age gate to parent sign-off</p>
+                        </div>
+                    </div>
+
+                    <!-- Charts Grid -->
+                    <div class="charts-grid">
+                        <!-- Chart 1: Consent conversion trend -->
+                        <div class="chart-card">
+                            <h3>Consent Conversion Rate Trend (Last 30 Days)</h3>
+                            <p class="chart-subtitle">Detecting the sudden 15% metric drop 3 weeks post-launch</p>
+                            <div class="chart-container" id="trend-chart-container">
+                                <!-- Rendered dynamically as SVG in app.js -->
+                            </div>
+                        </div>
+
+                        <!-- Chart 2: Language Distribution & Right Requests -->
+                        <div class="chart-card">
+                            <h3>Consent Notice Language Preferences</h3>
+                            <div class="chart-container" id="pie-chart-container">
+                                <!-- Rendered dynamically as SVG in app.js -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diagnostic Diagnostic Module -->
+                    <div class="diagnostic-section">
+                        <div class="diagnostic-header">
+                            <div class="diag-title-group">
+                                <h2>Interactive PM Diagnostic Tool</h2>
+                                <p><strong>Problem statement:</strong> The North Star Metric (Consent Conversion) dropped by 15% three weeks post-launch without any new release. Investigate the root cause using this diagnostic hypothesis tree.</p>
+                            </div>
+                            <div class="diag-action">
+                                <button class="primary-btn pulse" id="start-diagnostic">Initialize Diagnostic Mode</button>
+                            </div>
+                        </div>
+
+                        <div class="diagnostic-workspace hidden" id="diagnostic-workspace">
+                            <!-- Hypothesis Tree Map -->
+                            <div class="hypothesis-map">
+                                <h3>Hypothesis Map</h3>
+                                <p class="map-instruction">Click on any hypothesis branch to query telemetry logs and verify the root cause.</p>
+                                
+                                <div class="tree-container" id="hypothesis-tree">
+                                    <!-- Populated dynamically via app.js -->
+                                </div>
+                            </div>
+
+                            <!-- Query Inspector Panel -->
+                            <div class="query-inspector" id="query-inspector">
+                                <div class="inspector-empty-state" id="inspector-empty">
+                                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                                    <p>Select a node in the Hypothesis Tree on the left to execute telemetry queries and examine metric data.</p>
+                                </div>
+                                <div class="inspector-content hidden" id="inspector-content">
+                                    <h4 id="node-title">Hypothesis: Technical Failure</h4>
+                                    <div class="query-block">
+                                        <div class="query-header">
+                                            <span>Telemetry Query</span>
+                                            <span class="status-running">SQL EXECUTE ACTIVE</span>
+                                        </div>
+                                        <code id="node-query">SELECT COUNT(*) FROM parent_consent_funnel WHERE...</code>
+                                    </div>
+                                    <div class="query-results">
+                                        <h5>Query Results & Data Visualization</h5>
+                                        <div class="data-display" id="node-data-display">
+                                            <!-- Dynamic result content -->
+                                        </div>
+                                        <div class="pm-assessment" id="node-pm-assessment">
+                                            <!-- Dynamic assessment -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Global Feedback Modal (For verification popups) -->
+        <div class="modal-overlay hidden" id="modal-overlay">
+            <div class="modal-box">
+                <div class="modal-header">
+                    <h3 id="modal-title">Verification Code</h3>
+                    <button class="modal-close" id="modal-close-btn">&times;</button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <!-- Injected dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Global Toast Alert -->
+        <div class="toast-container" id="toast-container"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
